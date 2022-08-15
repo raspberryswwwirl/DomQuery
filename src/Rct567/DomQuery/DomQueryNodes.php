@@ -813,7 +813,7 @@ class DomQueryNodes implements \Countable, \IteratorAggregate, \ArrayAccess
      *
      * @return \ArrayIterator containing nodes as instances of DomQuery
      */
-    public function getIterator()
+    public function getIterator(): \ArrayIterator
     {
         $iteration_result = array();
         if (\is_array($this->nodes)) {
