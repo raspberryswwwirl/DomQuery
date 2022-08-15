@@ -865,7 +865,7 @@ class DomQueryNodes implements \Countable, \IteratorAggregate, \ArrayAccess
      *
      * @throws \BadMethodCallException when attempting to write to a read-only item
      */
-    public function offsetSet($key, $value)
+    public function offsetSet($key, $value): void
     {
         throw new \BadMethodCallException('Attempting to write to a read-only node list');
     }
@@ -877,7 +877,7 @@ class DomQueryNodes implements \Countable, \IteratorAggregate, \ArrayAccess
      *
      * @throws \BadMethodCallException when attempting to unset a read-only item
      */
-    public function offsetUnset($key)
+    public function offsetUnset($key): void
     {
         throw new \BadMethodCallException('Attempting to unset on a read-only node list');
     }
