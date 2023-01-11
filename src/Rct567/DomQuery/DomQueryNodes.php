@@ -844,7 +844,7 @@ class DomQueryNodes implements \Countable, \IteratorAggregate, \ArrayAccess
      *
      * @return static
      */
-    public function offsetGet(mixed $key)
+    public function offsetGet($key)
     {
         if (!\is_int($key)) {
             throw new \BadMethodCallException('Attempting to access node list with non-integer');
@@ -865,7 +865,7 @@ class DomQueryNodes implements \Countable, \IteratorAggregate, \ArrayAccess
      *
      * @throws \BadMethodCallException when attempting to write to a read-only item
      */
-    public function offsetSet(mixed $key, mixed $value): void
+    public function offsetSet($key, $value): void
     {
         throw new \BadMethodCallException('Attempting to write to a read-only node list');
     }
@@ -877,7 +877,7 @@ class DomQueryNodes implements \Countable, \IteratorAggregate, \ArrayAccess
      *
      * @throws \BadMethodCallException when attempting to unset a read-only item
      */
-    public function offsetUnset(mixed $key): void
+    public function offsetUnset($key): void
     {
         throw new \BadMethodCallException('Attempting to unset on a read-only node list');
     }
