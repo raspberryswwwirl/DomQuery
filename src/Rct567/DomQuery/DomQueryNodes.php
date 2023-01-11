@@ -832,7 +832,7 @@ class DomQueryNodes implements \Countable, \IteratorAggregate, \ArrayAccess
      *
      * @return bool
      */
-    public function offsetExists(mixed $key): bool
+    public function offsetExists($key): bool
     {
         return isset($this->nodes[$key]);
     }
