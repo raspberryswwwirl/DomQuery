@@ -842,7 +842,7 @@ class DomQueryNodes implements \Countable, \IteratorAggregate, \ArrayAccess
      *
      * @param mixed $key
      *
-     * @return static
+     * @return mixed
      */
     public function offsetGet(mixed $key): mixed
     {
